@@ -1,0 +1,39 @@
+﻿@model IEnumerable<EmployeeListVm>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a href="/Employee/AddUpdateEmployee" class="btn btn-info">Add</a> <br />
+@if (ViewBag.Message != null)
+{
+    <label style="color:green">@ViewBag.Message</label>
+}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>DBO</th>
+            <th>City</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EmployeeId</td>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Age</td>
+                <td>@item.DOB</td>
+                <td>@item.CityName</td>
+                <td><a href="/Employee/AddUpdateEmployee?id=@item.EmployeeId" class="btn btn-info">Edit</a>
+                    <a href="/Employee/DeleteEmployee?EmployeeID=@item.EmployeeId" class="btn btn-danger">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\globe365india\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\globe365india\\.nuget\\packages"
+    ]
+  }
+}
