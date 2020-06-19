@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\globe365india\\source\\repos\\CRUDApplication\\CRUDApplication\\CRUDApplication.csproj": {}
+    "C:\\Users\\globe365india\\source\\repos\\CRUDApplicationGit\\MVC-CRUD-operation\\CRUDApplication\\CRUDApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\globe365india\\source\\repos\\CRUDApplication\\CRUDApplication\\CRUDApplication.csproj": {
+    "C:\\Users\\globe365india\\source\\repos\\CRUDApplicationGit\\MVC-CRUD-operation\\CRUDApplication\\CRUDApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\globe365india\\source\\repos\\CRUDApplication\\CRUDApplication\\CRUDApplication.csproj",
+        "projectUniqueName": "C:\\Users\\globe365india\\source\\repos\\CRUDApplicationGit\\MVC-CRUD-operation\\CRUDApplication\\CRUDApplication.csproj",
         "projectName": "CRUDApplication",
-        "projectPath": "C:\\Users\\globe365india\\source\\repos\\CRUDApplication\\CRUDApplication\\CRUDApplication.csproj",
+        "projectPath": "C:\\Users\\globe365india\\source\\repos\\CRUDApplicationGit\\MVC-CRUD-operation\\CRUDApplication\\CRUDApplication.csproj",
         "packagesPath": "C:\\Users\\globe365india\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\globe365india\\source\\repos\\CRUDApplication\\CRUDApplication\\obj\\",
+        "outputPath": "C:\\Users\\globe365india\\source\\repos\\CRUDApplicationGit\\MVC-CRUD-operation\\CRUDApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\globe365india\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

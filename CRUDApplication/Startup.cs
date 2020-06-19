@@ -25,18 +25,26 @@ namespace CRUDApplication
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        { 
             services.AddControllersWithViews();
+            services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
             services.AddDbContext<DbsContext>(c =>
                    c.UseSqlServer("Server=MAYUR-PC\\SQLEXPRESS;Database=CROS;Integrated Security=true;"));
 
             services.AddTransient<IEmployee, EmployeeServices>();
             services.AddTransient<ICity, CityService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+           
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -45,9 +53,12 @@ namespace CRUDApplication
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+           
             app.UseStaticFiles();
-
+           
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
